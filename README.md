@@ -12,3 +12,6 @@ Datum a čas provedení změny: 2024-10-03, 13:00
 ## Změna provedena na GitHubu.
 Datum a čas provedení změny: 2024-10-03, 13:14
 David Pavlů
+
+## Další tetovací změna provedena na GitHubu.
+Datum a čas provedení změny: 2024-10-03, 13:17
