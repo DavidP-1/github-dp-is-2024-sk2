@@ -1,0 +1,46 @@
+using System;
+using System.ComponentModel.Design.Serialization;
+
+
+class Program {
+
+
+    static void Main() {
+
+
+        // CHCI, ABY SE PROGRAM OPAKOVAL PO STISKU KLÁVESY "A"
+        string again = "a";
+        while(again == "a") {
+            Console.Clear();
+            Console.WriteLine("********************");
+            Console.WriteLine("**** Výpis řady ****");
+            Console.WriteLine("********************");
+            Console.WriteLine("**** David Pavlů ***");
+            Console.WriteLine("********************");
+            Console.WriteLine();
+
+
+
+            // Vstup od uživatel - lepší varianta
+            Console.WriteLine("Zadejte první (celé) číslo řady: ");
+            int first;
+            while(!int.TryParse(Console.ReadLine(), out first)) {
+                Console.Write("Nezadali jste celé číslo. Zadejte znovu první (celé) číslo řady: ");
+            }
+
+
+            // Opakování programu
+            Console.WriteLine("Pro opakování programu stiskněte klávesu a");
+            again = Console.ReadLine();
+   
+
+
+        }
+
+
+
+
+    }
+
+
+}
