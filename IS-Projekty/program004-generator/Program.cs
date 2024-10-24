@@ -1,16 +1,6 @@
-using System;
-using System.ComponentModel.Design.Serialization;
-
-
-class Program {
-
-
-    static void Main() {
-
-
-        // CHCI, ABY SE PROGRAM OPAKOVAL PO STISKU KLÁVESY "A"
+﻿        // CHCI, ABY SE PROGRAM OPAKOVAL PO STISKU KLÁVESY "A"
         string again = "a";
-        while(again == "a");
+        while(again == "a") {
             Console.WriteLine("********************");
             Console.WriteLine("**** Výpis řady ****");
             Console.WriteLine("********************");
@@ -35,11 +25,3 @@ class Program {
 
 
         }
-
-
-
-
-    }
-
-
-}
