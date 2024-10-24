@@ -1,21 +1,37 @@
-﻿        // CHCI, ABY SE PROGRAM OPAKOVAL PO STISKU KLÁVESY "A"
-        string again = "a";
+﻿        string again = "a";
         while(again == "a") {
-            Console.WriteLine("********************");
-            Console.WriteLine("**** Výpis řady ****");
-            Console.WriteLine("********************");
-            Console.WriteLine("**** David Pavlů ***");
-            Console.WriteLine("********************");
+            Console.WriteLine("*****************************************");
+            Console.WriteLine("**** Generátor pseudonáhodných čísel ****");
+            Console.WriteLine("*****************************************");
+            Console.WriteLine("************** David Pavlů **************");
+            Console.WriteLine("*****************************************");
             Console.WriteLine();
 
 
 
             // Vstup od uživatel - lepší varianta
-            Console.WriteLine("Zadejte první (celé) číslo řady: ");
-            int first;
-            while(!int.TryParse(Console.ReadLine(), out first)) {
-                Console.Write("Nezadali jste celé číslo. Zadejte znovu první (celé) číslo řady: ");
+            Console.WriteLine("Zadejte počet generovaných čísel (celé číslo): ");
+            int n;
+            while(!int.TryParse(Console.ReadLine(), out n)) {
+                Console.Write("Nezadali jste celé číslo. Zadejte celé číslo: ");
             }
+
+            Console.WriteLine("Zadejte dolní mez (celé číslo): ");
+            int dm;
+            while(!int.TryParse(Console.ReadLine(), out dm)) {
+                Console.Write("Nezadali jste celé číslo. Zadejte celé číslo: ");
+            }
+
+            Console.WriteLine("Zadejte horní mez (celé číslo): ");
+            int hm;
+            while(!int.TryParse(Console.ReadLine(), out hm)) {
+                Console.Write("Nezadali jste celé číslo. Zadejte celé číslo: ");
+            }
+
+            Console.WriteLine("\n\n===============");
+            Console.WriteLine("Uživatelský vstup: ");
+            Console.WriteLine("Počet čísel: {0}; dolní mez: {1}; horní mez: {2}", n, dm, hm);
+            Console.WriteLine("===============\n\n");
 
 
             // Opakování programu
