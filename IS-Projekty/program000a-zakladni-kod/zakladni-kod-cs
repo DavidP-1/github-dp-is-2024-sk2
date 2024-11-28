@@ -10,7 +10,7 @@ class Program {
 
         // CHCI, ABY SE PROGRAM OPAKOVAL PO STISKU KLÁVESY "A"
         string again = "a";
-        while(again == "a");
+        while(again == "a"); {
             Console.WriteLine("********************");
             Console.WriteLine("**** Výpis řady ****");
             Console.WriteLine("********************");
@@ -32,7 +32,7 @@ class Program {
             Console.WriteLine("Pro opakování programu stiskněte klávesu a");
             again = Console.ReadLine();
    
-
+        }
 
         }
 
